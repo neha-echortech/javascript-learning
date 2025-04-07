@@ -1,5 +1,18 @@
 // problem 2
-let n = 5; 
+let n = 5;  
+
+for (let i = n; i >= 1; i--) {
+    
+    
+    let stars = '';
+    for (let j = 1; j <= i; j++) {
+        stars += '* ';
+    }
+    
+    console.log(stars);
+}
+
+
 //code here
 // use only for loops. dont use .repeat() or .trim()
 
