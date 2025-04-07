@@ -43,7 +43,7 @@ for (let i = n; i >= 1; i--) {
         console.log(stars);
 }
 
-for(let i=1;i<=n;i++){
+for(let i=2;i<=n;i++){
     let stars='';
     for(let j=1;j<=i;j++){
         if(j===i){
