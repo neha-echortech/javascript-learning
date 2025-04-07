@@ -1,17 +1,17 @@
 // problem 2
-let n = 5;
+// let n = 5;
 
-for (let i = n; i >= 1; i--) {
-    let stars = '';
-    for (let j = 1; j <= i; j++) {
-        if (j === i) {
-            stars += '*';  
-        } else {
-            stars += '* ';  
-        }
-    }
-    console.log(stars);
-}
+// for (let i = n; i >= 1; i--) {
+//     let stars = '';
+//     for (let j = 1; j <= i; j++) {
+//         if (j === i) {
+//             stars += '*';  
+//         } else {
+//             stars += '*-';  
+//         }
+//     }
+//     console.log(stars);
+// }
 
 
 //code here
@@ -24,3 +24,33 @@ for (let i = n; i >= 1; i--) {
 // * * *
 // * *
 // *
+
+let n = 5;
+
+for (let i = n; i >= 1; i--) {
+    
+        
+    let stars = '';
+    for (let j = 1; j <= i; j++)
+         {
+            
+        if (j === i) {
+            stars += '*';  
+        } else {
+            stars += '* ';  
+        }
+    }  
+        console.log(stars);
+}
+
+for(let i=1;i<=n;i++){
+    let stars='';
+    for(let j=1;j<=i;j++){
+        if(j===i){
+            stars+='*';  
+            } else {  
+                stars+='* ';  
+                }  
+                }  
+                console.log(stars);
+            }
