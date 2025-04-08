@@ -60,7 +60,7 @@
 
 
 
-//problem 4,5
+// problem 4,5
 let n = 5;
 for (let i = 1; i <= n; i++) {
 
@@ -69,11 +69,8 @@ for (let i = 1; i <= n; i++) {
     stars += '  ';
   }
   for (let k = 1; k <= i; k++) {
-    if (k > 1) {
-                stars += ' '; 
-              }
-              stars += '*';
-            }
+    stars += ' *';
+  }
   console.log(stars);
 }
 
@@ -85,11 +82,8 @@ for(let j = 1; j <= n - i; j++){
    stars += '  ';  
 }
 for(let k = 1;k <= i;k++){
-    if (k > 1) {
-                stars += ' '; 
-              }
-              stars += '*';
-            }
+   stars += '* ';
+}
 console.log(stars);
 }
 
@@ -103,11 +97,8 @@ for(let j = 1; j <= n - i; j++){
    stars += '  ';  
 }
 for(let k = 1;k <= i;k++){
-   if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
-    }
+   stars += '* ';
+}
 console.log(stars);
 }
 
@@ -117,16 +108,13 @@ for(let i=2;i<=n;i++){
            stars += '  ';  
         }
         for(let k = 1;k <= i;k++){
-           if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
+           stars += '* ';
     }
         
                 console.log(stars);
             }
 
-// problem 7 
+//problem 7 
 // let n = 5;
 
 for(let i = n; i >=1; i--){
@@ -137,11 +125,11 @@ for(let i = n; i >=1; i--){
     }
     for(let k = 1;k <= i;k++){
         
-    if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
-    }
+        if(k==i) {
+            stars += '*';
+         }else {
+             stars +='*-'
+         }}
     console.log(stars);
 }
 
@@ -151,11 +139,12 @@ for(let i=2;i<=n;i++){
            stars += ' ';  
         }
         for(let k = 1;k <= i;k++){
-           if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
-    }
+            if(k==i) {
+                stars += '*';
+             }else {
+                 stars +='*-'
+             }}
+    
         
                 console.log(stars);
             }
@@ -164,37 +153,26 @@ for(let i=2;i<=n;i++){
 
 
 
-
-// problem 8
-// let n = 5;
+//problem 8
+//let n = 5;
 for (let i = 1; i <= n; i++) {
-
   let stars =' ';
   for (let j = 1; j <= n - i; j++) {
-    stars += '  ';
+    stars += ' ';
   }
   for (let k = 1; k <= i; k++) {
-    if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
-    }
+    stars += '* ';
+  }
   console.log(stars);
 }
-
-
 for(let i = n; i >= 1; i--){
 let stars =' ';
-
 for(let j =1; j<=n-i; j++){
-   stars += '  ';  
+   stars += ' ';
 }
 for(let k = 1;k <= i;k++){
-    if (k > 1) {
-        stars += ' '; 
-      }
-      stars += '*';
-    }
+   stars += '* ';
+}
 console.log(stars);
 }
 
@@ -229,10 +207,6 @@ console.log(stars);
 }
 
 
-
-
-
-
 //problem10
 // let n = 5;
 for (let i = 1; i <=n; i++) {
@@ -245,7 +219,7 @@ for (let i = 1; i <=n; i++) {
     if(k==i) {
         stars += '*';
      }else {
-         stars +='* '
+         stars +='*-'
      }
   }
   console.log(stars);
@@ -262,7 +236,7 @@ for(let k = 1;k <= i;k++){
     if(k==i) {
    stars += '*';
 }else {
-    stars +='* '
+    stars +='*-'
 
 }}
 console.log(stars);
