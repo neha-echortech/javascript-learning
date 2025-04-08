@@ -14,6 +14,8 @@
 // }
 
 
+
+
 //code here
 // use only for loops. dont use .repeat() or .trim()
 
@@ -25,32 +27,73 @@
 // * *
 // *
 
-let n = 5;
+// let n = 5;
 
-for (let i = n; i >= 1; i--) {
-    
-        
-    let stars = '';
-    for (let j = 1; j <= i; j++)
-         {
-            
-        if (j === i) {
-            stars += '*';  
-        } else {
-            stars += '* ';  
-        }
-    }  
-        console.log(stars);
+// for (let i = n; i >= 1; i--) {
+
+
+//     let stars = '';
+//     for (let j = 1; j <= i; j++)
+//          {
+
+//         if (j === i) {
+//             stars += '*';  
+//         } else {
+//             stars += '* ';  
+//         }
+//     }  
+//         console.log(stars);
+// }
+
+// for(let i=2;i<=n;i++){
+//     let stars='';
+//     for(let j=1;j<=i;j++){
+//         if(j===i){
+//             stars+='*';  
+//             } else {  
+//                 stars+='* ';  
+//                 }  
+//                 }  
+//                 console.log(stars);
+//             }
+
+
+
+
+
+
+
+
+
+let n = 5;
+for (let i = 1; i <= n; i++) {
+
+  let stars = '';
+  for (let j = 1; j <= n - i; j++) {
+    stars += '  ';
+  }
+  for (let k = 1; k <= i; k++) {
+    stars += ' *';
+  }
+  console.log(stars);
 }
 
-for(let i=2;i<=n;i++){
-    let stars='';
-    for(let j=1;j<=i;j++){
-        if(j===i){
-            stars+='*';  
-            } else {  
-                stars+='* ';  
-                }  
-                }  
-                console.log(stars);
-            }
+
+for(let i=n; i>=1; i--){
+let stars='';
+
+for(let j=1; j<=n-i; j++){
+   stars+='  ';  
+}
+for(let k=1;k<=i;k++){
+   stars+='* ';
+}
+console.log(stars);
+}
+
+
+
+
+
+
+
